@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="item1">Currency</string>
+    <string name="item2">Weight</string>
+    <string name="item3">Distance</string>
+
+<!--    Currecy-->
+    <string name="USDUSD">1</string>
+    <string name="USDEUR">0.8475</string>
+    <string name="USDRUS">76.2</string>
+    <string name="EURUSD">1.17</string>
+    <string name="EURRUS">89.5</string>
+    <string name="EUREUR">1</string>
+    <string name="RUSEUR">0.011</string>
+    <string name="RUSUSD">0.013</string>
+    <string name="RUSRUS">1</string>
+
+<!--    Distance-->
+    <string name="INCHINCH">1</string>
+    <string name="INCHFOOT">0.083</string>
+    <string name="INCHYARD">0.028</string>
+    <string name="INCHCM">2.54</string>
+    <string name="FOOTINCH">12</string>
+    <string name="FOOTFOOT">1</string>
+    <string name="FOOTYARD">0.33</string>
+    <string name="FOOTCM">30.48</string>
+    <string name="YARDINCH">36</string>
+    <string name="YARDFOOT">3</string>
+    <string name="YARDYARD">1</string>
+    <string name="YARDCM">91.44</string>
+    <string name="CMINCH">0.39</string>
+    <string name="CMFOOT">0.033</string>
+    <string name="CMYARD">0.011</string>
+    <string name="CMCM">1</string>
+
+<!--    Weight-->
+    <string name="OZOZ">1</string>
+    <string name="OZLB">0.063</string>
+    <string name="OZG">28.35</string>
+    <string name="LBOZ">16</string>
+    <string name="LBG">453.59</string>
+    <string name="LBLB">1</string>
+    <string name="GLB">0.035</string>
+    <string name="GOZ">0.0022</string>
+    <string name="GG">1</string>
+    <string name="distance">Distance</string>
+
+
+</resources>

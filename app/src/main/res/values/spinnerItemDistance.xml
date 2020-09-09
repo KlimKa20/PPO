@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerItemDistance">
+        <item>INCH</item>
+        <item>FOOT</item>
+        <item>YARD</item>
+        <item>CM</item>
+    </string-array>
+</resources>
