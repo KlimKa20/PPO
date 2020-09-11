@@ -35,7 +35,6 @@
                 android:id="@+id/btncopyfirstfield"
                 android:layout_width="151dp"
                 android:layout_height="wrap_content"
-                android:onClick="copyInBuffer"
                 android:text="copy" />
         </LinearLayout>
 
@@ -43,7 +42,6 @@
             android:id="@+id/btnchange"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="additionButton"
             android:text="↑↓" />
 
         <Spinner
@@ -71,7 +69,6 @@
                 android:id="@+id/btncopysecondfield"
                 android:layout_width="151dp"
                 android:layout_height="wrap_content"
-                android:onClick="copyInBuffer"
                 android:text="copy" />
         </LinearLayout>
     </LinearLayout>
