@@ -23,14 +23,17 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="by.bsuir.intent.action.Weight" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
                 <action android:name="by.bsuir.intent.action.Distance" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
                 <action android:name="by.bsuir.intent.action.Currency" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

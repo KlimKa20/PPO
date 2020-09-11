@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Lab 1(d)</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="item1">Currency</string>
     <string name="item2">Weight</string>
     <string name="item3">Distance</string>
 
-<!--    Currecy-->
+    <!--    Currecy-->
     <string name="USDUSD">1</string>
     <string name="USDEUR">0.8475</string>
     <string name="USDRUS">76.2</string>
@@ -17,7 +17,7 @@
     <string name="RUSUSD">0.013</string>
     <string name="RUSRUS">1</string>
 
-<!--    Distance-->
+    <!--    Distance-->
     <string name="INCHINCH">1</string>
     <string name="INCHFOOT">0.083</string>
     <string name="INCHYARD">0.028</string>
@@ -35,7 +35,7 @@
     <string name="CMYARD">0.011</string>
     <string name="CMCM">1</string>
 
-<!--    Weight-->
+    <!--    Weight-->
     <string name="OZOZ">1</string>
     <string name="OZLB">0.063</string>
     <string name="OZG">28.35</string>
