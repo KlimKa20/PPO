@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication"
-    android:versionCode="000001001"
-    android:versionName="0.1.1">
+    android:versionCode="000002001"
+    android:versionName="0.2.1">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -20,19 +20,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ConverterActivity">
             <intent-filter>
-                <action android:name="by.bsuir.intent.action.Weight" />
+                <action android:name="${applicationId}.Weight" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
-                <action android:name="by.bsuir.intent.action.Distance" />
+                <action android:name="${applicationId}.Distance" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
-                <action android:name="by.bsuir.intent.action.Currency" />
+                <action android:name="${applicationId}.Currency" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

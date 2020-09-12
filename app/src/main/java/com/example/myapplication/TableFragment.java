@@ -1,17 +1,16 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProviders;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
 
-public class table extends Fragment {
+
+public class TableFragment extends Fragment {
     Button button0;
     Button button000;
     Button button1;
@@ -27,7 +26,8 @@ public class table extends Fragment {
     Button buttonDelete;
     Button buttonDot;
 
-    BlankViewModel mViewModel;
+    ConverterViewModel mViewModel;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -65,8 +65,9 @@ public class table extends Fragment {
 
         return viewHierarchy;
     }
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mViewModel = ViewModelProviders.of(getActivity()).get(BlankViewModel.class);
+        mViewModel = ViewModelProviders.of(getActivity()).get(ConverterViewModel.class);
     }
 }

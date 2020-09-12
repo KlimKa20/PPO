@@ -31,19 +31,7 @@
                 android:inputType="text"
                 android:longClickable="false"></EditText>
 
-            <Button
-                android:id="@+id/btncopyfirstfield"
-                android:layout_width="151dp"
-                android:layout_height="wrap_content"
-                android:onClick="copyInBuffer"
-                android:text="copy" />
         </LinearLayout>
-
-        <Button
-            android:id="@+id/btnchange"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="↑↓" />
 
         <Spinner
             android:id="@+id/spinner2"
@@ -66,11 +54,6 @@
                 android:inputType="text"
                 android:longClickable="false"></EditText>
 
-            <Button
-                android:id="@+id/btncopysecondfield"
-                android:layout_width="151dp"
-                android:layout_height="wrap_content"
-                android:text="copy" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

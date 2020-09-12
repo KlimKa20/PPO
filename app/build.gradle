@@ -27,11 +27,14 @@ android {
     flavorDimensions 'type'
     productFlavors {
         pro {
-        versionName 'v2'
+            versionName 'v2'
+            dimension 'type'
+            applicationId = "by.bsuir.intent.action.pro"
         }
         free {
             dimension 'type'
             versionName 'v1'
+            applicationId = "by.bsuir.intent.action.free"
         }
     }
 }
