@@ -13,8 +13,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.myapplication.ConverterViewModel;
-import com.example.myapplication.R;
+import by.bsuir.Converter.ConverterViewModel;
+import by.bsuir.Converter.R;
 
 
 public class HeaderFragment extends Fragment implements AdapterView.OnItemSelectedListener {

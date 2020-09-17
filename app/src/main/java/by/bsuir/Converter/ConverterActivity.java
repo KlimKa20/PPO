@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package by.bsuir.Converter;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,11 +19,11 @@ public class ConverterActivity extends FragmentActivity {
         Intent intent = getIntent();
         String action = intent.getAction();
         int layoutId = 0;
-        if (action.equals("by.bsuir.intent.action." + getString(R.string.ids) + ".Currency")) {
+        if (action.equals("by.bsuir.Converter." + getString(R.string.idVersion) + ".Currency")) {
             layoutId = R.array.spinnerItemCurrency;
-        } else if (action.equals("by.bsuir.intent.action." + getString(R.string.ids) + ".Distance")) {
+        } else if (action.equals("by.bsuir.Converter." + getString(R.string.idVersion) + ".Distance")) {
             layoutId = R.array.spinnerItemDistance;
-        } else if (action.equals("by.bsuir.intent.action." + getString(R.string.ids) + ".Weight")) {
+        } else if (action.equals("by.bsuir.Converter." + getString(R.string.idVersion) + ".Weight")) {
             layoutId = R.array.spinnerItemWeight;
         }
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, layoutId, android.R.layout.simple_spinner_dropdown_item);

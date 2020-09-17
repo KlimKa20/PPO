@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.example.myapplication"
+        applicationId "by.bsuir.Converter"
         minSdkVersion 26
         targetSdkVersion 30
         versionCode generateVersionCode(versionArray)
@@ -30,11 +30,11 @@ android {
     productFlavors {
         pro {
             dimension 'type'
-            applicationId = "by.bsuir.intent.action.pro"
+            applicationId = "by.bsuir.Converter.pro"
         }
         free {
             dimension 'type'
-            applicationId = "by.bsuir.intent.action.free"
+            applicationId = "by.bsuir.Converter.free"
         }
     }
 }

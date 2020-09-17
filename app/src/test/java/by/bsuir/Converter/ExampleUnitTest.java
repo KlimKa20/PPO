@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package by.bsuir.Converter;
 
 import org.junit.Test;
 

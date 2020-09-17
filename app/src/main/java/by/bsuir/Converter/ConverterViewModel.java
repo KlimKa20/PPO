@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package by.bsuir.Converter;
 
 import android.app.Application;
 import android.content.ClipData;

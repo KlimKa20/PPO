@@ -3,5 +3,5 @@
 
 <resources>
     <string name="app_name">Lab 1 free</string>
-    <string name="ids">free</string>
+    <string name="idVersion">free</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package by.bsuir.Converter;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,15 +19,15 @@ public class MainScreenActivity extends AppCompatActivity implements View.OnClic
         Intent intent;
         switch (v.getId()) {
             case R.id.btnCurrency:
-                intent = new Intent("by.bsuir.intent.action." + getString(R.string.ids) + ".Currency");
+                intent = new Intent("by.bsuir.Converter." + getString(R.string.idVersion) + ".Currency");
                 startActivity(intent);
                 break;
             case R.id.btnDistance:
-                intent = new Intent("by.bsuir.intent.action." + getString(R.string.ids) + ".Distance");
+                intent = new Intent("by.bsuir.Converter." + getString(R.string.idVersion) + ".Distance");
                 startActivity(intent);
                 break;
             case R.id.btnWeight:
-                intent = new Intent("by.bsuir.intent.action." + getString(R.string.ids) + ".Weight");
+                intent = new Intent("by.bsuir.Converter." + getString(R.string.idVersion) + ".Weight");
                 startActivity(intent);
                 break;
         }
