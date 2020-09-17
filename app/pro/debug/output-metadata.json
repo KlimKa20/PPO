@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "by.bsuir.Converter.pro",
+  "variantName": "proDebug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 400,
+      "versionName": "0.4.0",
+      "enabled": true,
+      "outputFile": "app-pro-debug.apk"
+    }
+  ]
+}
