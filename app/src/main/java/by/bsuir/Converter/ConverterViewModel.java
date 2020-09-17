@@ -25,8 +25,13 @@ public class ConverterViewModel extends AndroidViewModel {
     }
 
     public void setDot() {
-        if (!liveDataFirst.getValue().contains(".")) {
-            liveDataFirst.setValue(liveDataFirst.getValue() + ".");
+        if (!liveDataFirst.getValue().contains(".")){
+            if (liveDataFirst.getValue() == ""){
+                liveDataFirst.setValue("0.");
+            }
+            else {
+                liveDataFirst.setValue(liveDataFirst.getValue() + ".");
+            }
             convertField();
         }
     }

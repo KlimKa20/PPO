@@ -31,12 +31,17 @@ public class HeaderFragment extends Fragment implements AdapterView.OnItemSelect
                              Bundle savedInstanceState) {
 
         View viewHierarchy = inflater.inflate(R.layout.fragment_header, container, false);
+        editText = viewHierarchy.findViewById(R.id.etNum);
+        editText1 = viewHierarchy.findViewById(R.id.etNum1);
         spinner = viewHierarchy.findViewById(R.id.spinner);
         spinner2 = viewHierarchy.findViewById(R.id.spinner2);
         spinner.setOnItemSelectedListener(this);
         spinner2.setOnItemSelectedListener(this);
         model = ViewModelProviders.of(getActivity()).get(ConverterViewModel.class);
         clipboardManager = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+
+        model.getNumber().observe(requireActivity(), value -> editText.setText(value));
+        model.Convert().observe(requireActivity(), value -> editText1.setText(value));
         return viewHierarchy;
     }
 
@@ -50,14 +55,5 @@ public class HeaderFragment extends Fragment implements AdapterView.OnItemSelect
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
 
-    }
-
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        editText = (EditText) view.findViewById(R.id.etNum);
-        editText1 = (EditText) view.findViewById(R.id.etNum1);
-        model.getNumber().observe(requireActivity(), value -> editText.setText(value));
-        model.Convert().observe(requireActivity(), value -> editText1.setText(value));
     }
 }
