@@ -5,18 +5,23 @@ def getArray() {
         standardOutput = diffOutput
     }
     def ReceivedString = diffOutput.toString()
-    if(ReceivedString.count('.')==2){
-        def currentDotPosition = ReceivedString.indexOf('.')
-        List VersionName = new ArrayList()
-        VersionName.add(ReceivedString.substring(1,currentDotPosition))
-        ReceivedString = ReceivedString.substring(currentDotPosition+1, ReceivedString.length())
-        currentDotPosition = ReceivedString.indexOf('.')
+    def currentDotPosition = ReceivedString.indexOf('.')
+    List VersionName = new ArrayList()
+    VersionName.add(ReceivedString.substring(1,currentDotPosition))
+    ReceivedString = ReceivedString.substring(currentDotPosition+1, ReceivedString.length())
+    currentDotPosition = ReceivedString.indexOf('-')
+    if (currentDotPosition!=-1){
         VersionName.add(ReceivedString.substring(0,currentDotPosition))
-        VersionName.add(ReceivedString.substring(currentDotPosition+1, ReceivedString.length()-1))
-        return VersionName
-    } else {
-        return ["0","0","0"]
+        ReceivedString = ReceivedString.substring(currentDotPosition+1, ReceivedString.length())
+        currentDotPosition = ReceivedString.indexOf('-')
+        VersionName.add(ReceivedString.substring(0, currentDotPosition))
     }
+    else {
+        VersionName.add(ReceivedString.substring(0, ReceivedString.length()-1))
+        VersionName.add(0)
+    }
+    return VersionName
+
 }
 
 static def generateVersionCode(ArrayList array) {

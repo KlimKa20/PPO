@@ -13,7 +13,7 @@ import androidx.lifecycle.MutableLiveData;
 public class ConverterViewModel extends AndroidViewModel {
     private final MutableLiveData<String> liveDataFirst = new MutableLiveData<>("");
     private final MutableLiveData<String> liveDataSecond = new MutableLiveData<>("");
-    private final MutableLiveData<Float> procent = new MutableLiveData<>();
+    private final MutableLiveData<Float> percent = new MutableLiveData<>();
 
     public ConverterViewModel(@NonNull Application application) {
         super(application);
@@ -59,7 +59,7 @@ public class ConverterViewModel extends AndroidViewModel {
     }
 
     public void convertField() {
-        liveDataSecond.postValue(Float.toString((float) (Float.parseFloat(liveDataFirst.getValue()) * procent.getValue())));
+        liveDataSecond.postValue(Float.toString((float) (Float.parseFloat(liveDataFirst.getValue()) * percent.getValue())));
     }
 
     public void changeFields() {
@@ -84,7 +84,7 @@ public class ConverterViewModel extends AndroidViewModel {
     }
 
     public void selectData(Float procent) {
-        this.procent.setValue(procent);
+        this.percent.setValue(procent);
         if (liveDataFirst.getValue().length() != 0)
             convertField();
     }
